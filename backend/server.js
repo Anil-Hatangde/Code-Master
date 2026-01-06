@@ -113,6 +113,10 @@ app.get('/api/protected', auth, (req, res) => {
   res.json({ message: `Hello ${req.user.email}, you're authenticated!` });
 });
 
+app.get("/", (req, res) => {
+  res.send("Backend is running 🚀");
+});
+
 // Signup Route
 app.post('/signup', async (req, res) => {
   const { email, password, name } = req.body;
