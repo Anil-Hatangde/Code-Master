@@ -6,7 +6,7 @@ import compilerRoutes from "./compiler.js";
 import Question from "./models/Question.js";
 import puppeteer from "puppeteer";
 import User from "./models/User.js";
-import authRoutes from './routes/auth.js';
+import authRoutes from "./routes/auth.js";
 import bcrypt from 'bcrypt';
 import auth from './middleware/auth.js';
 import solvedRoutes from './routes/solvedRoutes.js';
